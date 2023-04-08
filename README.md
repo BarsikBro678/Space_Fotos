@@ -1,4 +1,6 @@
-### Космические фото
+# Космические фото
+
+### Что делает этот проект
 
 Данный проект с помощью библиотеки ```requests``` загружает в папку ```images``` фотографии космоса от Spase X, Nasa APOD(Astronomy Picture of the Day) и Nasa EPIC(Earth Polychromatic Imaging Camera).
 
@@ -17,3 +19,7 @@ Python3 должен быть уже установлен. Затем испол
 ```
 pip install -r requirements.txt
 ```
+
+### Как запустить
+
+Для запуска программы напишите в терминале питона команду ```python main.py```

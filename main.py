@@ -57,7 +57,7 @@ def fetch_nasa_epic(nasa_api_key):
 		date = date.strftime('%Y/%m/%d')
 		image_url = f"https://api.nasa.gov/EPIC/archive/natural/{date}/png/{image['image']}.png"
 		load_image(image_url,
-				    f"images/epic_nasa_{number}",
+				    f"images/epic_nasa_{number}.png",
 				    params={"api_key": nasa_api_key,})
 
 

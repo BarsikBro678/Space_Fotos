@@ -10,6 +10,7 @@
 
 ```
 NASA_API_KEY=xWOVfAhhBqaguZtiqQtkcJIJQBESmVJfzoGnPprc
+BOT_TOKEN = 5826364594:AAFl8T4jZ4T67XkHy4JcLZa6CVJQs49h0YM
 ```
 
 Python3 должен быть уже установлен. Затем используйте pip (или pip3, есть конфликт с Python2) для установки зависимостей:

@@ -16,9 +16,9 @@ def randomize():
 
 	
 def main():
-	time = os.environ["TIME"]
-	bot_token = os.environ["BOT_TOKEN"]
-	chat_id = os.environ["CHAT_ID"]
+	time = os.environ["BOT_TIME"]
+	bot_token = os.environ["BOT_TELEGRAM_TOKEN"]
+	chat_id = os.environ["TG_CHAT_ID"]
 	bot = telegram.Bot(token=bot_token)
 	while True:
 		telegram_bot(bot, chat_id)

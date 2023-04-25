@@ -16,13 +16,13 @@ def randomaizing_pictures():
 
 	
 def main():
-	bot_time = os.environ["BOT_TIME"]
+	bot_wait = os.environ["BOT_WAIT"]
 	bot_telegram_token = os.environ["BOT_TELEGRAM_TOKEN"]
 	tg_chat_id = os.environ["TG_CHAT_ID"]
 	bot = telegram.Bot(token=bot_telegram_token)
 	while True:
 		send_photo_telegram_bot(bot, tg_chat_id)
-		sleep(bot_time)
+		sleep(bot_wait)
 		
 
 if __name__ == "__main__":

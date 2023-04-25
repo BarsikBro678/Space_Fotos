@@ -6,11 +6,11 @@ import telegram
 
 
 def telegram_bot(bot, chat_id):
-	with open(randomize(), "rb") as photo:
+	with open(randomaizing_pictures(), "rb") as photo:
 		bot.send_photo(chat_id = chat_id, photo = photo)	
 
 
-def randomize():
+def randomaizing_pictures():
 	images = os.listdir("images")
 	return f"images/{random.choice(images)}"
 

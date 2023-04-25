@@ -5,7 +5,7 @@ from time import sleep
 import telegram 
 
 
-def telegram_bot(bot, chat_id):
+def send_photo_telegram_bot(bot, chat_id):
 	with open(randomaizing_pictures(), "rb") as photo:
 		bot.send_photo(chat_id = chat_id, photo = photo)	
 
@@ -21,7 +21,7 @@ def main():
 	tg_chat_id = os.environ["TG_CHAT_ID"]
 	bot = telegram.Bot(token=bot_telegram_token)
 	while True:
-		telegram_bot(bot, tg_chat_id)
+		send_photo_telegram_bot(bot, tg_chat_id)
 		sleep(bot_time)
 		
 

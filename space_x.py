@@ -2,7 +2,7 @@ import os
 
 from requests import get
 
-from main import load_image
+from tools import load_image
 
 
 def fetch_spasex_last_launch():

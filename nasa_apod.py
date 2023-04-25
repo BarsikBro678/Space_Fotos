@@ -2,7 +2,7 @@ import os
 
 from requests import get
 
-from main import fetch_extection, load_image
+from tools import fetch_extection, load_image
 
 
 def fetch_nasa_apod(nasa_api_key):

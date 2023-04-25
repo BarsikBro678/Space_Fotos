@@ -3,7 +3,7 @@ import datetime
 
 from requests import get
 
-from main import load_image
+from tools import load_image
 
 
 def fetch_nasa_epic(nasa_api_key):

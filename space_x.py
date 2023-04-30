@@ -11,9 +11,9 @@ def fetch_spasex_last_launch():
 	response.raise_for_status()
 	spase_x_images = response.json()["links"]["flickr"]["original"]
 
-	for number, spase_x_image in enumerate(spase_x_images):
+	for number, spase_x_image in enumerate(spase_x_images, start=1):
 		load_image(spase_x_image,
-		           "images/Spase_X_{number}.jpg".format(number=number + 1))
+		           "images/Spase_X_{number}.jpg".format(number=number))
 
 
 def main():

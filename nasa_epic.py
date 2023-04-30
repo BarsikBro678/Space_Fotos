@@ -6,11 +6,11 @@ from requests import get
 from tools import load_image
 
 
-def fetch_nasa_epic(nasa_api_key, download_images=8):
+def fetch_nasa_epic(nasa_api_key, download_quantity=8):
 	url = "https://api.nasa.gov/EPIC/api/natural/images"
 	payload = {
 		"api_key": nasa_api_key,
-		"count": download_images,
+		"count": images_quantity,
 	}
 	response = get(url, params=payload)
 	response.raise_for_status()

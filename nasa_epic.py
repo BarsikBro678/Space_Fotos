@@ -14,12 +14,12 @@ def fetch_nasa_epic(nasa_api_key, download_quantity=8):
 	}
 	response = get(url, params=payload)
 	response.raise_for_status()
-	for number, image in enumerate(response.json()):
+	for number, image in enumerate(response.json(), start=1):
 		date = datetime.datetime.fromisoformat(image["date"])
 		date = date.strftime('%Y/%m/%d')
 		image_url = f"https://api.nasa.gov/EPIC/archive/natural/{date}/png/{image['image']}.png"
 		load_image(image_url,
-			   f"images/epic_nasa_{number+1}.png",
+			   f"images/epic_nasa_{number}.png",
 			   params={"api_key": nasa_api_key})
 
 

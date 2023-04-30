@@ -5,7 +5,7 @@ from requests import get
 from tools import fetch_extection, load_image
 
 
-def fetch_nasa_apod(nasa_api_key, images_quantitiy=30):
+def fetch_nasa_apod(nasa_api_key, images_quantity=30):
 	url = "https://api.nasa.gov/planetary/apod"
 	payload = {
 		"api_key": nasa_api_key,

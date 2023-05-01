@@ -7,7 +7,7 @@ from tools import load_image
 
 def fetch_spasex_last_launch():
     url = "https://api.spacexdata.com/v5/launches/5eb87d47ffd86e000604b38a"
-        response = get(url)
+    response = get(url)
     response.raise_for_status()
     spase_x_images = response.json()["links"]["flickr"]["original"]
 

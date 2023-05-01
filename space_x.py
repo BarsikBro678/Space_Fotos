@@ -13,7 +13,7 @@ def fetch_spasex_last_launch():
 
 	for number, spase_x_image in enumerate(spase_x_images, start=1):
 		load_image(spase_x_image,
-		           "images/Spase_X_{number}.jpg".format(number=number))
+			   		"images/Spase_X_{number}.jpg".format(number=number))
 
 
 def main():

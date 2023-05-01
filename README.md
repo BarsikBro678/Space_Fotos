@@ -28,7 +28,17 @@ pip install -r requirements.txt
 
 ### Как запустить
 
-Для запуска программы напишите в терминале питона команду 
+Для запуска программы напишите в терминале питона команды
+```
+python space_x.py
+```
+```
+python nasa_apod.py
+```
+```
+python nasa_epic.py
+```
+А далее команду
 ```
 python telegram.py
 ```
